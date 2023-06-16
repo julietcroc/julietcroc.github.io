@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Juliet Crocco
+    Survey Form, freeCodeCamp Certification Project
+    Summer 2023
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course and Teacher Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Setting background image for the survey form page-->
+    <div id="web-form">
+        
+    <div id="contain-form">
+
+    <h1 id="title">Courses Taken with Juliet Crocco</h1>
+    <!--Cert Req-->
+    <p id="description">This survey is to find out which courses you have taken with me and what your thoughts about those courses are. Since I have been faculty at Mesa CC, I have been adapting the curriculum and course design as I go, so I want to ensure that I am improving. Thank you for taking the time to complete it.</p>
+    <p id="required-remark">* Complete at least the required fields</p>
+    <!--Cert Req-->
+    <form action="" id="survey-form">
+        <!--Personal Information (added)-->
+        <h2>Personal Information</h2>
+        <hr>
+        <fieldset>
+          <!--Cert Req (id's only inputs are enclosed in labels for accessibility best practice)-->  
+        <label for="name" id="name-label">* Initials: <input id="name" type="text" placeholder="JC" required></label>
+        <label for="email" id="email-label">* Email: <input type="email" name="email" id="email" placeholder="juli@google.com" required></label>
+    
+        <label for="number" id="number-label">Age (optional): <input type="number" name="number" id="number" min="13" max="100" placeholder="25"></label>
+        
+    </fieldset>
+    <hr>
+    <!--Course Information-->
+        <h2>Course Information</h2>
+        <hr>
+            
+            <fieldset id="course-field"><!--Course List-->
+                <legend id="course-legend">* Which course(s) have you taken with Juliet Crocco as the instructor?</legend>
+                <p id="format-note">Please note the format next to each of the courses and choose accordingly. Hybrid means that you were in person in a classroom at least once a week, whereas live online was where we met virtually, once a week. For CIS105, it was only offered as a hybrid so there is no other option.</p>
+            <!--Using a flex box to create two columns-->
+            <div class="row">
+            <div id="course-flex-1">
+            <label for="cis105"><input class="inline" type="checkbox" name="course" id="cis105"  value="cis105" >
+                HYBRID CIS105: Introduction to Computer Information Systems
+                </label>
+                <label for="cis133-online">
+                    <input class="inline" type="checkbox" name="course" id="cis133-online" value="cis133-online">ONLINE CIS133DA: Web Design/Development Level 1
+                </label>
+            <label class="inline" for="cis133-hybrid">
+                <input class="inline" type="checkbox" name="course" id="cis133-hybrid" value="cis133-hybrid">HYBRID CIS133DA: Web Design/Development Level 1
+            </label>
+            <label for="cis133-liveonline">
+                <input class="inline" type="checkbox" name="course" id="cis133-liveonline" value="cis133-liveonline">LIVE ONLINE CIS133DA: Web Design/Development Level 1
+            </label>
+            </div>
+            <div id="course-flex-2">
+            <label for="cis136-online">
+                <input class="inline" type="checkbox" name="course" id="cis136-online" value="cis136-online">ONLINE CIS136: Content Management Systems - WordPress
+            </label>
+            <label for="cis136-hybrid">
+                <input class="inline" type="checkbox" name="course" id="cis136-hybrid" value="cis136-hybrid">HYBRID CIS136: Content Management Systems - WordPress
+            </label>
+            <label for="cis166-online">
+                <input class="inline" type="checkbox" name="course" id="cis166-online" value="cis166-online">ONLINE CIS166: Introduction to JavaScript
+            </label>
+        </div>
+    </div>    
+
+            </fieldset>
+            <!--End course list-->
+            <!--Radio yes/no-->
+            <fieldset id="current">
+                <legend>Are you currently in one of her courses?</legend>
+                <label class="inline" for="yes"><input class="inline" type="radio" name="enrolled" id="yes" value="yes">
+            Yes</label>
+            <label class="inline" for="no"><input class="inline" type="radio" name="enrolled" id="no" value="no" checked>
+            No</label>
+            </fieldset>
+            <!--dropdowns - semester-->
+        <label for="semester" id="semester-label">* What was the most recent semester that you had Juliet as your instructor?
+            <select name="semester" id="semester" required>
+            <option value="fall22">Fall 2022</option>
+            <option value="spring23">Spring 2023</option>
+            <option value="summer23">Summer 2023</option>
+            <option value="fall23">Fall 2023</option>
+            <option value="spring24">Spring 2024</option>
+        </select>
+        </label>
+       
+        
+    
+      
+        <!--Comments-->
+        <label for="comments">Feedback
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Please provide ideas on how to improve these classes you took for future students."></textarea>
+    </label>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
