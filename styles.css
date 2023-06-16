@@ -1,3 +1,9 @@
+
+/*importing my palette from coolors stylesheet https://coolors.co/palette/4d90c5-222771-5ecb9c-5b2d6b-8a719e*/
+@import url(cooolersweb.css);
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,15 +15,18 @@ body{
 #web-form {
     height: 100vh;
     width: 100%;
-    background: rgb(57, 158, 212) 
-                url(https://images.pexels.com/photos/1477835/pexels-photo-1477835.jpeg)
+  
+    background: linear-gradient(171deg, rgba(53, 3, 134, 0.677) 19%, rgba(37,37,205,0.640515581232493) 49%, rgba(0,212,255,0.7301514355742297) 100%), url(https://images.pexels.com/photos/1477835/pexels-photo-1477835.jpeg)
                 no-repeat fixed top left;
+                background-size: cover;
     overflow-x: hidden;
+    
     
     
 }
 #contain-form{
-    background: #19136c;
+    background: linear-gradient(135deg, rgba(45, 65, 134, 0.6) 40%, rgba(92, 45, 108, 0.5)),
+    linear-gradient(310deg, rgba(45, 65, 134, 0.7) 20%, rgba(92, 45, 108, 0.6)) ;
     color:#dbe9ee;
     font-family: 'Mukta', sans-serif;
     max-width: 550px;
@@ -26,10 +35,14 @@ body{
     margin-left: auto;
     padding: 1.5em;
     border-radius: 65px;
+    box-shadow: 0px 0px 8px rgba(138, 161, 234,.8);
     
 }
 h1, h2{
     text-align: center;
+}
+h2{
+    margin: 0;
 }
 #description, #required-remark{
     margin-inline-start: 2px;
@@ -40,18 +53,24 @@ h1, h2{
     padding-block-end: 0.625em;
     min-inline-size: min-content;
 }
-#required-remark, #name-label, #email-label, #course-legend, #semester-label{
+/*for accessibility and usability add color and symbol to indicate required*/
+#required-remark, 
+#name-label, 
+#email-label, 
+#course-legend, 
+#semester-label{
     color: #66E5A4;
 }
+/*defaults for fields and labels*/
 fieldset{
     display: block;
     border: none;
-
 }
 label{
     padding-top: 0.5em;
     display: block;
 }
+/*alignment taken from user agent stylesheet to align items*/
 #format-note{
     font-size: smaller;
     font-style: italic;
@@ -65,46 +84,159 @@ label{
     border: 2px solid #dbe9ee;
     margin-bottom: 2em;
 }
-
+/*Defining defaults for input areas*/
 select, input,textarea{
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
+  cursor: pointer;
 }
-
-/*inline for input checkboxes and radio buttons*/
-.inline{
-    padding-right: 2em;
-    margin: 0 0.7em 5px 0;
-   vertical-align: text-top;
-    width: unset;
+#name, #email, #number{
+    font-size: 12pt;
+    height: 0.5em;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
     
 }
+fieldset#personal label{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+/*inline for input checkboxes and radio buttons*/
+.inline{
+    
+    margin: 3px 0.7em 3px 0;
+   
+    vertical-align: text-top;
+    width: unset;
+    line-height: 0;
+    
+    /*If I want to hide the checkboxes to use card trick
+    display: none;
+    */
+}
+/*.card{
+    cursor: pointer;
+    border: 1px solid #dbe9ee;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0.5em 0 0 0; 
+   
+    border: solid 1px white;
+    display: block;
+    padding: 10px;
+    text-align: center;*/
+
+
+
 .row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
-.hidebox{
-    display: none;
-}
+/*make a two column course list*/
+/*
 .course-row{
     display: flex;
     flex-direction: row;
 }
-.course-label{
-    float: left;
-}
+
 #course-flex-1, #course-flex-2{
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
     
+    
+}
+#course-flex-1{
+    padding-right: 0.5em;
+    
+}
+#course-flex-2{
+    padding-left: 0.5em;
+}
+/*
+/*card styles for checkbox trick with courses*/
+
+/*Dropdown styling*/
+#semester{
+    height: 2em;
+    font-size: 16px;
+    padding: 2px;
+    margin-right: 5px;
+    width: 10em;
+    border-radius: 3px;
 }
 
-label[for="comments"],label[for="semester"]{
-    display: unset;
+
+.course-hover{
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 20px;
+    padding:0;
+    font-weight: bolder;
 }
+
+label[for="comments"]{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+
+.centerit{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+div.centerit textarea{
+    width: 100%;
+} 
+div.centerit label{
+    width: 100%;
+    padding-top:0;
+    
+} 
+
+
+#comments{
+    border-radius: 10px;
+    padding: 10px 1em;
+    margin: auto;
+}
+textarea{
+    cursor: text;
+}
+button{
+    width: 25%;
+    min-width: 150px;
+    padding:10px;
+    
+    background-color: #66E5A4;
+    color: rgba(53, 3, 134, 0.677);
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.5em;
+    border: 1px solid #dbe9ee;
+    box-shadow: 0 0 3px #dbe9ee;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #dbe9ee;
+}
+
 
