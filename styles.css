@@ -61,11 +61,11 @@ h2{
 #semester-label{
     color: #66E5A4;
 }
-/*defaults for fields and labels*/
+/*defaults for fields and labels
 fieldset{
     display: block;
     border: none;
-}
+}*/
 label{
     padding-top: 0.5em;
     display: block;
@@ -97,71 +97,27 @@ select, input,textarea{
     padding: 10px;
     border-radius: 5px;
     border: none;
-    padding-left: 15px;
-    
+    padding-left: 15px;  
 }
 fieldset#personal label{
     margin-top: 10px;
     font-weight: bold;
     font-size: larger;
 }
-/*inline for input checkboxes and radio buttons*/
+
+/*checkboxes and radio button inputs*/
 .inline{
-    
-    margin: 3px 0.7em 3px 0;
-   
-    vertical-align: text-top;
     width: unset;
-    line-height: 0;
-    
-    /*If I want to hide the checkboxes to use card trick
-    display: none;
-    */
+    margin: 3px 0.7em 3px 0;
+    vertical-align: text-top;
 }
-/*.card{
-    cursor: pointer;
-    border: 1px solid #dbe9ee;
-    border-radius: 3px;
-    margin: 0;
-    padding: 0.5em 0 0 0; 
-   
-    border: solid 1px white;
-    display: block;
-    padding: 10px;
-    text-align: center;*/
-
-
-
-.row{
+fieldset#current label{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-/*make a two column course list*/
-/*
-.course-row{
-    display: flex;
-    flex-direction: row;
+    align-items: center;
+    
+    
 }
 
-#course-flex-1, #course-flex-2{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    
-    
-}
-#course-flex-1{
-    padding-right: 0.5em;
-    
-}
-#course-flex-2{
-    padding-left: 0.5em;
-}
-/*
-/*card styles for checkbox trick with courses*/
 
 /*Dropdown styling*/
 #semester{
@@ -181,6 +137,7 @@ fieldset#personal label{
     padding:0;
     font-weight: bolder;
 }
+/*For feedback and comments area to be centered and flexed*/
 
 label[for="comments"]{
     display: block;
