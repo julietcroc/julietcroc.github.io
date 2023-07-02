@@ -1,0 +1,48 @@
+/*
+Juliet Crocco
+Tribute Project 
+Date
+Web Design/development level 1
+Mesa Community College
+*/
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #565656;
+}
+body{
+    margin: auto;
+    background-color: teal;
+}
+#container{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em 1.5em 1.5em 1.5em;
+    background-color: #fff;
+}
+h1{
+    font-size: 150%;
+}
+/*Reading area*/
+p, ul{
+    font-size: 115%;
+    line-height: 2;
+}
+figcaption{
+    text-align: center;
+}
+figure{
+    margin: 0;
+}
+#image{
+    
+    width: 100%;
+    max-width: 600px;
+  height: 250px;
+  object-fit: cover;
+  object-position: right bottom;
+}
+a{
+    color: teal;
+}
