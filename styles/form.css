@@ -19,7 +19,7 @@ body{
     background: linear-gradient(171deg, rgba(53, 3, 134, 0.677) 19%, 
         rgba(37,37,205,0.640515581232493) 49%, 
         rgba(0,212,255,0.7301514355742297) 100%), 
-        url(/images/spiderweb.jpeg)
+        url(images/spiderweb.jpeg)
         no-repeat fixed top left;
     background-size: cover;
     overflow-x: hidden;
