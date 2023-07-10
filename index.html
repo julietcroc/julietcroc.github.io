@@ -134,7 +134,7 @@
                 value="cis133-liveonline"
               />LIVE ONLINE CIS133DA Web Design & Dev 1
             </label>
-
+            
             <label class="course-hover" for="cis136-online">
               <input
                 class="inline"
@@ -227,5 +227,26 @@
         </form>
       </div>
     </div>
+    <script>
+      const form = document.querySelector("#form")
+      const submitButton = document.querySelector("#submit")
+      const scriptURL = 'https://script.google.com/macros/library/d/1ffwawiVlCPRXh69xCnNZitVs6NcYFECEggg9hWe44dlw70VVYIWIA_8e/1'
+      form.addEventListener('submit', e => {
+        submitButton.disabled = true
+        e.preventDefault()
+        let requestBody = new FormData(form)
+        fetch(scriptURL, { method: 'POST', body: requestBody})
+          .then(response => {
+             alert('Success!', response)
+             submitButton.disabled = false
+            })
+          .catch(error => {
+          alert('Error!', error.message)
+            submitButton.disabled = false
+   
+          }
+          )
+      })
+   </script>
   </body>
 </html>

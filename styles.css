@@ -11,14 +11,17 @@ body{
     
     
 }
-/*Setting the background image for the survey form page*/
+/*Setting the background image for the survey form page, spiderweb retrieved from Image by <a href="https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3725540">Joe</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3725540">Pixabay</a>*/
 #web-form {
     height: 100vh;
     width: 100%;
   
-    background: linear-gradient(171deg, rgba(53, 3, 134, 0.677) 19%, rgba(37,37,205,0.640515581232493) 49%, rgba(0,212,255,0.7301514355742297) 100%), url(https://images.pexels.com/photos/1477835/pexels-photo-1477835.jpeg)
-                no-repeat fixed top left;
-                background-size: cover;
+    background: linear-gradient(171deg, rgba(53, 3, 134, 0.677) 19%, 
+        rgba(37,37,205,0.640515581232493) 49%, 
+        rgba(0,212,255,0.7301514355742297) 100%), 
+        url(images/spiderweb.jpeg)
+        no-repeat fixed top left;
+    background-size: cover;
     overflow-x: hidden;
     
     
@@ -104,20 +107,13 @@ fieldset#personal label{
     font-weight: bold;
     font-size: larger;
 }
-
 /*checkboxes and radio button inputs*/
 .inline{
     width: unset;
     margin: 3px 0.7em 3px 0;
     vertical-align: text-top;
+    line-height: 0;
 }
-fieldset#current label{
-    display: flex;
-    align-items: center;
-    
-    
-}
-
 
 /*Dropdown styling*/
 #semester{
@@ -144,11 +140,9 @@ label[for="comments"]{
     text-align: center;
     font-size: 1.5em;
     margin-block-start: 0.83em;
-    
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 
 .centerit{
@@ -164,7 +158,6 @@ div.centerit textarea{
 div.centerit label{
     width: 100%;
     padding-top:0;
-    
 } 
 
 
