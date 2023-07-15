@@ -1,0 +1,126 @@
+/*
+Juliet Crocco
+CIS133
+Portfolio
+MCC
+DATE
+Requirements: 
+1. nav fixed! id navbar at the top of viewport
+2. media query - mobile first block display 
+    to display flex at a larger screen
+    determine breakpoint
+3. Height of welcome to 100vh height of viewport
+*/
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #565656;
+}
+html{
+    scroll-padding-top: 4rem;
+}
+body{
+    margin: auto;   
+}
+/*a start on what we will do for the navigation for the final*/
+nav{ 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding: 15px 0;
+    background-color: #f5f5f5;
+}
+nav ul{
+    margin:0;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+/*the padding that I have for the header here is messing up my navigation -- normally I like having the nav in the header but it is not working here*/
+header{
+   position: relative;
+   top: 4rem;
+    padding: 14px 14px 30px 14px;   
+}
+h1{
+    font-size: 150%;
+}
+main, 
+footer{
+    padding: 1.5em;
+    padding-top: 2em;
+    margin: auto;
+    width: 100%;
+    line-height: 1.5;
+    max-width: 600px;
+}
+main{
+    box-shadow: 0 5px 5px #f3f3f3;
+}
+p, 
+ul{
+    font-size: 115%;
+    line-height: 2;
+}
+section{
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
+a{
+    color: rgba(29, 75, 213, 0.84);
+    text-decoration: none;
+}
+a:hover{
+    color: teal;
+    border-bottom: 2px solid teal;
+}
+
+footer ul{
+    margin-top: 0px;
+}
+footer p{
+    margin-bottom: 6px;
+}
+/*********************Styles just for portfolio page************************************/
+
+#welcome-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.project-tile{
+    height: 250px;
+    width: 100%;
+    border: 2px solid black;
+}
+#navbar{
+    /*Controls the layout of the element in the viewport*/
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+@media only screen and (min-width: 750px){
+    #project-tiles{
+        display: flex;
+        border: 5px solid green;
+        justify-content: space-between;
+    }
+    #project-tiles a{
+        flex-basis: 30%;  
+      }
+    section, main{
+     max-width: 1100px;
+    }
+}
