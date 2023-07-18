@@ -1,0 +1,263 @@
+/*
+Juliet Crocco
+Tribute & Product
+Date
+Web Design/development level 1
+Mesa Community College
+*/
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #565656;
+}
+html{
+    scroll-padding-top: 4rem;
+}
+body{
+    margin: auto;   
+}
+a{
+    color: rgb(32, 66, 139);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(111, 0, 128);
+}
+/*a start on what we will do for the navigation for the final*/
+nav{ 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding: 15px 0;
+    background-color: #f5f5f5;
+}
+#nav-bar{
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+}
+nav ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+.nav-link{
+   margin: 0 1.5em;
+    line-height: 1;
+    text-align: center;
+    padding: 4px;
+
+}
+
+
+/*the padding that I have for the header here is messing up my navigation -- normally I like having the nav in the header but it is not working here*/
+header{
+    padding: 14px 14px 30px 14px;   
+}
+h1{
+    font-size: 150%;
+}
+h3{
+    font-weight: 500;
+    padding: .5em;
+    width: 100%;
+    color:#f5f5f5;
+    background: linear-gradient(90deg, #325399ff, #3D4C92ff, #48468Bff, #533F84ff, #5E387Dff, #693276ff, #742B6Fff); ;
+}
+
+.large-banner{
+    width: 100%;
+    margin: 0 0;
+    margin-top: 3em;
+    
+}
+.small-image{
+    display: none;
+}
+/*Using generic elements like div allow you to target just the text or a specific part of the layout without messing with the actual semantic layout. Sometimes it is very useful to use the elements like this so that you can not only divide your content obviously -- notice that I gave my div an id of header-read so I know this is the header reading area, but it also gives you more control over the other elements insidea and the semantic HTML element that the reading area is nested inside. I could have also given the max-width to the h1 element and the paragraph selector in the header element just as effectively, and if I were unable to alter the HTML, that is exactly what I would have done*/
+#header-read{
+    max-width: 850px;
+    margin: auto;
+}
+#tribute-info{
+    line-height: normal;
+    color: #565656;
+    margin-bottom: 0;
+}
+figcaption{
+    text-align: center;
+}
+figure{
+    margin: 0;
+}
+/*Image for Tribute page*/
+#image{
+width: 100%;
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+}
+ 
+footer{
+    padding: 1.5em;
+    padding-top: 0em;
+    margin: auto;
+    width: 100%;
+}
+
+section:nth-of-type(1){
+    padding-bottom: 2em;
+}
+#services h2{
+    font-weight: 400;
+    text-align: center;
+    text-transform: lowercase;
+}
+/*giving the main content a very faint box shadow to differentiate from the footer*/
+main{
+    box-shadow: 0 5px 5px #f3f3f3;
+}
+
+/*Reading area*/
+p, 
+ul{
+    font-size: 1.15em;
+    line-height: 1.75;
+}
+section, article{
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    padding-top: 1.5em;
+}
+article h3{
+    margin-top: 2em;
+}
+
+footer{
+    padding-bottom: 3em;
+    
+    margin: auto;
+}
+footer form{
+    display: block;
+    margin: auto;
+}
+footer form input{
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+
+footer h3{
+    text-align: center;
+    font-size: 3em;
+}
+#contact-message{
+    text-align: center;
+}
+#submit{
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #325399ff, #3D4C92ff, #48468Bff, #533F84ff, #5E387Dff, #693276ff, #742B6Fff);
+    border: none;
+    box-shadow: 3px 3px 5px#5f5f5f;
+    color: #f5f5f5;
+    font-size: 1.125em;
+    border-radius: 5px 5px;
+    letter-spacing: .125em;
+}
+input[type="email"]{
+    border-radius: 4px 4px;
+    font-size: 1.125em;
+    border: 3px solid hsla(242, 33%, 41%, 1);
+}
+#footer-read{
+    
+    line-height: 1.5;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
+footer ul{
+    margin-top: 0px;
+}
+footer p{
+    margin-bottom: 6px;
+}
+#email{
+    padding: .25em 2em;
+    text-align: left;
+    margin-bottom: 14px;
+}
+.topnav .icon {
+    
+    display: none;
+  }
+#video{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 50vh;
+    max-width: 600px;
+}
+@media screen and (max-width: 740px) {
+    .large-banner{
+        display: none;
+    }
+    .small-image{
+        padding-top: 3em;
+        display: block;
+        width: 100%;
+    }
+}  
+@media screen and (max-width: 600px) {
+    section, article{
+        padding: 0 0.45em;
+    }
+    nav ul{
+        display: block;
+        font-size: 100%;
+    }
+    .topnav{
+        padding-top: 3em;
+    }
+    .topnav li.nav-link{
+      display: none;
+    }
+    .topnav a.icon {
+        position: absolute;
+    left: 32px;
+    top: 16px;
+        display: block;
+      
+      color: rgb(32, 66, 139) ;
+      font-size: 1.25em;
+
+    }
+    .topnav.responsive {
+      position: sticky;
+   
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive li {
+      display: block;
+      text-align: left;
+      padding-left: 32px;
+      margin: 0;
+      font-size: 1em;
+    }
+  }
