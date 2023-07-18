@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services by Juliet Crocco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!--This stylesheet is for the responsive nav bar with the icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="header">
+        <nav  id="nav-bar">
+            <ul class="topnav" id="nav-list">
+                <li class="nav-link"><a href="#udl">UDL Course Design Assessment</a>
+                </li>
+                <li class="nav-link"><a href="#user">User Experience Audit</a>
+                </li>
+                <li class="nav-link"><a href="#designer">Web Design Services</a>
+                </li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU
+                    <i class="fa fa-bars"></i>
+                    </a></li>
+            </ul>
+        </nav>
+        <img id="header-image" class="large-banner" src="images/Juliet marie square logo-3-banner logo.png" alt="Juliet Marie Educator, Consultant, Designer, Accessibility, Universal Design">
+        <img class="small-image" src="images/Juliet marie square logo-1.png" alt="Juliet Marie Educator, Consultant, Designer, Accessibility, Universal Design">
+    </header>
+    <main>
+        <!--Embedded Product Video?-->
+        <section id="services"><h2>Let's WORK&nbsp;TOGETHER TO CREATE AWESOME USER&nbsp;AND&nbsp;LEARNING&nbsp;EXPERIENCES FOR&nbsp;ALL</h2>
+            <article><h3 id="udl">Universal Design for Learning Course Assessment</h3>
+                <p>Are you seeking to enhance your course and create an extraordinary learning experience that goes beyond accessibility? Look no further! By collaborating with an experienced educator and course designer like myself, you can take your course to the next level. As a consultant, I offer a fresh perspective and a wealth of expertise to ensure your course stands out from the rest. What sets me apart is my unique combination of skills as both a web designer and a college educator. With my web design expertise, I will create a visually captivating, user-friendly, and technically flawless course. Drawing on my deep understanding of pedagogy and instructional design, I will ensure that your content is engaging, inclusive, and effective. By working with me, you'll receive a comprehensive assessment that caters to the diverse needs of your learners. Don't settle for mediocrity—let's collaborate and transform your course into an exceptional learning experience!</p>
+                <p>The following video discusses why accessibility is not enough to consider.</p>
+                <iframe id="video" src="https://www.youtube.com/embed/-i9aGm0TBu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>If you are ready to learn more about Universal Design for Learning and how it can take you beyond the normal accessibilty and into the realm of amazing user experience. <a href="connect">Send me your email and we will find a time to connect.</a></p>
+            </article>
+            <article>
+                <h3  id="user">User Experience and Accessibility Audit</h3>
+            <p>Are you seeking to improve the user experience and accessibility of your website or online course? Prepare for a comprehensive audit that combines expertise with the latest research on user interactions! As a professional in user experience and accessibility, I will carefully evaluate every aspect of your website or online course based on the most up-to-date research findings. I'll consider factors such as website design, navigation, functionality, and inclusivity, ensuring that your online content aligns with the latest user interaction trends. By incorporating insights from cutting-edge research, I will provide you with practical recommendations and solutions to enhance the user experience. Let's work together to transform your website or online course into a more user-friendly and accessible platform that keeps pace with the evolving needs of users in today's digital landscape. <a href="connect">Send me your email and we will find a time to connect.</a></p>
+            </article>
+            <article><h3 id="designer">Web Design Services</h3>
+            <p>Are you ready to bring your website vision to life? Look to my expertise in user experience, accessibility, and the latest research to create a website that truly stands out. With a collaborative approach, I'll work closely with you from start to finish, ensuring that your goals and requirements are met. By incorporating best practices, we'll design a visually captivating and user-friendly website that engages your audience. From intuitive navigation to responsive design, every element will be carefully crafted to provide a seamless user experience across all devices. Accessibility will be a top priority as we implement features like color contrast and descriptive alt text, making your website inclusive for all users. Together, we'll create a professional and inviting online presence that reflects your business or educational brand. Get ready to launch a website that not only meets industry standards but exceeds expectations, setting you apart from the competition. <a href="connect">Send me your email and we will find a time to connect.</a></p>
+            </article>
+        </section>
+    </main>
+<footer>
+    <h3>Let's Connect</h3>
+    <p id="contact-message">Enter your email address to start talking about how we can work together.</p>
+    <form action="https://www.freecodecamp.com/email-submit">
+        <label for="email"><input id="email" type="email" placeholder="ie. juliet.crocco@mesacc.edu"></label>
+        <label for="submit"></label><input id="submit" type="submit" value="Submit">
+    </form>
+</footer>
+    
+    <script>
+        function myFunction() {
+          let x = document.getElementById("nav-list");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+</body>
+</html>
