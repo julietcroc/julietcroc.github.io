@@ -1,6 +1,6 @@
 
 /*importing my palette from coolors stylesheet https://coolors.co/palette/4d90c5-222771-5ecb9c-5b2d6b-8a719e*/
-@import url(/styles/cooolersweb.css);
+@import url(cooolersweb.css);
 *{
     box-sizing: border-box;
 }
@@ -23,8 +23,6 @@ body{
         no-repeat fixed top left;
     background-size: cover;
     overflow-x: hidden;
-    
-    
     
 }
 #contain-form{

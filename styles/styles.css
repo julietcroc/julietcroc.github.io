@@ -92,35 +92,90 @@ footer p{
     margin-bottom: 6px;
 }
 /*********************Styles just for portfolio page************************************/
-
+#tagline{
+    font-weight: 300;
+    color: #e4e2e3;
+    
+}
 #welcome-section{
     height: 100vh;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    background: linear-gradient(45deg, #325399ff, #3D4C92ff, #48468Bff, #533F84ff, #5E387Dff, #693276ff, #742B6Fff);
+    
 }
+#welcome-section h1{
+    margin-bottom: 5rem;
+    color: #e4e2e3;
+}
+
 .project-tile{
-    height: 250px;
+    height: 400px;
     width: 100%;
-    border: 2px solid black;
+    border: 5px solid #48468Bff;
+    margin-bottom: 1rem;
+    background-position: bottom center;
 }
 #navbar{
     /*Controls the layout of the element in the viewport*/
     position: fixed;
     top: 0;
     right: 0;
+    font-stretch: 150%;
 }
+#navbar li{
+    border: 3px solid #192f45;
+    padding: 0 .5rem;
+    margin: 0 1.15rem;
+}
+#navbar li:hover{
+    border: 3px solid #742b6f;
+    padding: 0 .5rem;
+    margin: 0 1.15rem;
+    
+}
+#navbar a{
+    color: #192f45;
+    text-decoration: none;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#navbar a:hover{
+    color:#742b6f ;
+    border-bottom: none;
+}
+#projects{
+    padding-top: 4.5rem;
+}
+#survey{
+background-image: url(../images/course-survey.png);
+background-size: cover;
+}
+#product{
+    background-image: url(../images/service-page.png);
+    background-size: cover;
+}
+#tribute{
+    background-image: url(../images/tribute-page.png);
+    background-size: cover;
+}
+
 @media only screen and (min-width: 750px){
     #project-tiles{
         display: flex;
-        border: 5px solid green;
         justify-content: space-between;
+    }
+    .project-tile{
+        height: 200px;
+        background: hsl(hue, saturation, lightness);
     }
     #project-tiles a{
         flex-basis: 30%;  
       }
     section, main{
-     max-width: 1100px;
+     max-width: 1200px;
     }
 }

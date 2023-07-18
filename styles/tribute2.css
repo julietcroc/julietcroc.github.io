@@ -18,21 +18,20 @@ nav{
     width: 100%;
     margin: 0;
     padding: 0;
+    padding: 15px 0;
     background-color: #f5f5f5;
 }
 nav ul{
     margin:0;
-    padding: 15px 0;
+    
     display: flex;
     flex-direction: row;
-    text-align: left;
     justify-content: flex-end;
 }
 
 nav ul li{
     list-style-type: none;
     margin-right: 15px;
-    flex-flow: row;
 }
 
 /*the padding that I have for the header here is messing up my navigation -- normally I like having the nav in the header but it is not working here*/
@@ -42,6 +41,14 @@ header{
 h1{
     font-size: 150%;
 }
+main, 
+footer{
+    padding: 1.5em;
+    padding-top: 2em;
+    margin: auto;
+    width: 100%;
+}
+
 /*Using generic elements like div allow you to target just the text or a specific part of the layout without messing with the actual semantic layout. Sometimes it is very useful to use the elements like this so that you can not only divide your content obviously -- notice that I gave my div an id of header-read so I know this is the header reading area, but it also gives you more control over the other elements insidea and the semantic HTML element that the reading area is nested inside. I could have also given the max-width to the h1 element and the paragraph selector in the header element just as effectively, and if I were unable to alter the HTML, that is exactly what I would have done*/
 #header-read{
     max-width: 850px;
@@ -65,11 +72,10 @@ width: 100%;
   object-fit: cover;
   object-position: bottom;
 }
-main, 
-footer{
-    padding: 1.5em;
-    margin: auto;
-    width: 100%;
+
+
+section:nth-of-type(1){
+    padding-bottom: 2em;
 }
 /*giving the main content a very faint box shadow to differentiate from the footer*/
 main{
