@@ -1,2 +1,2 @@
 # julietcroc.github.io
-Portfolio website for CIS133DA Summer 2023
+Website for whole class projects, CIS133DA
