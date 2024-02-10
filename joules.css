@@ -1,3 +1,6 @@
+/*Joulesmc2 styles for profile project. 
+Initial commit date 2023. Last update February 2024
+/*Global styles*/
 *{  
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
@@ -7,6 +10,8 @@
 body{
     padding-bottom: 10em;
     background-color: #f3f3f3;
+    
+
 }
 body div{
     margin-left: auto;
@@ -14,7 +19,7 @@ body div{
     color:#565656;
     
 }
-
+/* home page CSS*/
 #forshadow{
     width: 100%;
     position: relative;
@@ -24,7 +29,7 @@ body div{
     background-color: rgb(227, 224, 224);
     z-index: 99;
     border-bottom: 1px rgb(227, 224, 224);
-    box-shadow: 0px 9px 3px 1px #f3f3f39f;
+    box-shadow: 0px 9px 8px 1px rgba(243, 243, 243, 0.3);
 }
 header{
     max-width: 1050px;
@@ -102,7 +107,6 @@ header h1 a{
 #intro {
     height: 500px;
     width: 100%;
-    padding-top: 2em;
     margin: auto;
     display: table;
     
@@ -116,7 +120,6 @@ header h1 a{
     background-repeat: no-repeat;
     padding-top: 1em;;
     width: 100%;
-    max-width: 750px;
     height: auto;
     -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -124,62 +127,39 @@ header h1 a{
 }
 #tagline {
     display: table-cell;
-    
     width: 50%;
-    line-height: 2em;
-    height: 500px;
+    height: 450px;
    -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  vertical-align: middle; 
   
 }
 #textover {
     background-color: rgba(81, 8, 88, 0.7);
 }
-#tagline h2{
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 0;
-    padding: 1.5em 2em 0 2em;
-    font-size: 1.75em;
-    line-height: 1.5em;
-  color: #f3f3f3;
-  
-  
-    text-align: left;
-    vertical-align: middle; 
-}
-#tagline h1{
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 0;
-    padding: 1.5em 2em 0 2em;
-    font-size: 1.75em;
-    line-height: 1.5em;
-  color: #f3f3f3;
-  
-  
-    text-align: left;
-    vertical-align: middle; 
-}
+
 #tagline p{
     color: #f3f3f3;
+    font-size: larger;
+    font-weight: 550;
     width: 100%;
-    margin-top: 14px;
-    margin-left: 1px;
-    margin-right: 1px;
     line-height: 1.5em;
-    padding: 0em 3.14em 2.6em 3.14em;
+    padding: 2em;
+    text-align: center;
     
 }
 /*CSS Project page*/
 
-#mainwrapper{
-    padding-top: 2em;
-    width: 80%;
+main{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    width: 100%;
     max-width: 750px;
     
+    
 }
-#mainwrapper h2{
+h2{
     width: 100%;
     
     padding-bottom: 2em;
@@ -194,11 +174,19 @@ header h1 a{
     
     
 }
-#mainwrapper h3{
+h3{
     padding-bottom: 2em;
 }
-#mainwrapper p{
+p{
     padding-top: 2em;
+}
+/** ball.html 2D Breakout game*********/
+#ball-html #h1tag{
+    padding: 0;
+    text-align: center;
+}
+#startButton{
+    margin: auto;
 }
 canvas {
     background: #eee;
