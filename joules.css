@@ -1,5 +1,14 @@
 /*Joulesmc2 styles for profile project. 
 Initial commit date 2023. Last update February 2024
+*/
+/* Arizona sunset palette: warm sand, deep plum shadows, cactus green and golden light. Keep text on solid surfaces for predictable contrast. */
+:root {
+    --sand: #fff3e3;
+    --shadow: #352238;
+    --plum: #613653;
+    --cactus: #46523d;
+    --gold: #f9cd83;
+}
 /*Global styles*/
 *{  
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,14 +18,15 @@ Initial commit date 2023. Last update February 2024
 }
 body{
     padding-bottom: 10em;
-    background-color: #f3f3f3;
+    background-color: var(--sand);
+    color: var(--shadow);
     
 
 }
 body div{
     margin-left: auto;
     margin-right: auto;
-    color:#565656;
+    color: inherit;
     
 }
 /* home page CSS*/
@@ -26,10 +36,11 @@ body div{
     padding-top: 1em;
     padding-bottom: .5em;
     margin: auto;
-    background-color: rgb(227, 224, 224);
+    background-color: var(--shadow);
+    color: var(--sand);
     z-index: 99;
-    border-bottom: 1px rgb(227, 224, 224);
-    box-shadow: 0px 9px 8px 1px rgba(243, 243, 243, 0.3);
+    border-bottom: 3px solid var(--gold);
+    box-shadow: 0 9px 18px rgba(53, 34, 56, 0.15);
 }
 header{
     max-width: 1050px;
@@ -85,7 +96,8 @@ nav li {
     font-size: .75em;
 }
 nav a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: .2em;
     
 }
 
@@ -93,8 +105,9 @@ header h1 a{
     margin-top: 1em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: .1em;
-    text-decoration: none;
-    color: rgb(88, 8, 53) ;
+    text-decoration: underline;
+    text-underline-offset: .2em;
+    color: var(--sand);
     
 }
 
@@ -114,32 +127,32 @@ header h1 a{
 }
 .hero{
     position: relative;
-    background-image: url(images/digital-background-rawpixel.jpeg);
+    background-color: var(--cactus);
+    background-image: url("images/arizona-sunset.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 1em;;
     width: 100%;
     height: auto;
-    -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+
   
 }
 #tagline {
     display: table-cell;
     width: 50%;
     height: 450px;
-   -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
   vertical-align: middle; 
   
 }
 #textover {
-    background-color: rgba(81, 8, 88, 0.7);
+    background-color: var(--shadow);
+    color: var(--sand);
+    border-inline-start: .35rem solid var(--gold);
 }
 
 #tagline p{
-    color: #f3f3f3;
+    color: var(--sand);
     font-size: larger;
     font-weight: 550;
     width: 100%;
@@ -166,7 +179,7 @@ h2{
     
     font-size: 1.75em;
     line-height: 1.5em;
-  color: #565656;
+  color: var(--shadow);
   
   
     text-align: left;
@@ -189,7 +202,30 @@ p{
     margin: auto;
 }
 canvas {
-    background: #eee;
+    background: var(--sand);
+    border: 2px solid var(--cactus);
+    max-width: 100%;
     display: block;
     margin: 0 auto;
   }
+/* Normal-size text pairs meet WCAG 2.1 AA (at least 4.5:1). */
+a { color: var(--plum); text-decoration: underline; text-underline-offset: .2em; }
+a:visited { color: var(--cactus); }
+a:hover, a:active { color: var(--shadow); text-decoration-thickness: .18em; }
+header a, header a:visited, #textover a, #textover a:visited { color: var(--sand); }
+header a:hover, header a:active, #textover a:hover, #textover a:active { color: var(--gold); }
+a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--shadow);
+    outline-offset: 4px;
+}
+header a:focus-visible, #textover a:focus-visible { outline-color: var(--gold); }
+#startButton {
+    background: var(--plum);
+    color: var(--sand);
+    border: 2px solid var(--plum);
+    border-radius: .4rem;
+    padding: .75em 1.25em;
+    font: inherit;
+    cursor: pointer;
+}
+#startButton:hover, #startButton:active { background: var(--shadow); border-color: var(--shadow); }

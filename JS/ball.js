@@ -9,7 +9,7 @@
       const ctx = canvas.getContext("2d");
       //drawing ball
       const ballRadius = 10;
-      let ballColor;
+      let ballColor = "#352238";
       //define variables for paddle
       const paddleHeight = 10;
       const paddleWidth = 75;
@@ -112,7 +112,7 @@
       //random color for fun!
       function randomColor() {
         return (ballColor =
-          "#" + Math.floor(Math.random() * 16777215).toString(16));
+          ["#352238", "#613653", "#46523d"][Math.floor(Math.random() * 3)]);
       }
       /*define a drawing loop for ball, paddle, bricks*/
       function drawBall() {
