@@ -229,3 +229,41 @@ header a:focus-visible, #textover a:focus-visible { outline-color: var(--gold); 
     cursor: pointer;
 }
 #startButton:hover, #startButton:active { background: var(--shadow); border-color: var(--shadow); }
+
+/* Keep the course description and game layout independent of home-page spacing. */
+#ball-html header { padding: .75rem 1.5rem; }
+#ball-html main { padding: clamp(1.25rem, 4vw, 2.5rem); }
+#ball-html main h2 { padding-bottom: 0; margin-bottom: 1rem; }
+#ball-html main p { padding-top: 0; line-height: 1.7; }
+#ball-html main p + p { margin-top: 1rem; }
+#ball-html .game-demo { margin-top: 2.5rem; }
+#ball-html .game-controls { margin: 1.5rem 0; text-align: center; }
+#ball-html canvas { height: auto; }
+
+/* Homepage profile and prominent family support link. */
+#home-page header { align-items: center; gap: 1.5rem; padding: .75rem 1.5rem; flex-wrap: wrap; }
+#home-page #h1tag { width: auto; padding: 0; flex: 1 1 18rem; }
+#home-page .navflex { width: auto; flex: 1 1 22rem; }
+#home-page nav ul { padding: 0; gap: 1.25rem; flex-wrap: wrap; justify-content: flex-end; align-items: center; }
+#home-page nav li { padding: 0; font-size: .95rem; }
+#home-page .nav-support, #home-page .nav-support:visited { display: inline-block; padding: .75rem 1rem; border: 2px solid var(--gold); border-radius: .4rem; color: var(--gold); }
+#home-page #intro { display: block; height: auto; }
+#home-page .hero { min-height: 450px; display: flex; align-items: center; padding: 3rem 1.5rem; }
+#home-page #tagline { display: block; width: 100%; max-width: 750px; height: auto; }
+#home-page #textover { padding: 2rem; border-radius: .5rem; }
+#home-page #tagline p { padding: 0; text-align: left; }
+#home-page #tagline .intro-name { font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 3.5rem); font-weight: normal; line-height: 1.2; }
+#home-page #tagline .intro-author { margin-top: 1rem; }
+#home-page #tagline .intro-credentials { font-size: 1rem; margin-top: .75rem; }
+#home-page main { max-width: 900px; padding: clamp(1.25rem, 4vw, 2.5rem); }
+#home-page main h2, #home-page main h3 { padding-bottom: 0; margin-bottom: 1rem; }
+#home-page main p { padding-top: 0; line-height: 1.75; }
+#home-page .home-support { padding: clamp(1.5rem, 4vw, 2.5rem); border: 2px solid var(--plum); border-top: 6px solid var(--plum); border-radius: .5rem; }
+#home-page .home-eyebrow { font-weight: bold; text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; margin-bottom: 1rem; }
+#home-page .home-support-button, #home-page .home-support-button:visited { display: inline-block; margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--plum); color: var(--sand); border-radius: .4rem; line-height: 1.5; }
+#home-page .home-support-button:hover { background: var(--shadow); }
+#home-page .home-about, #home-page #mainwrapper { margin-top: 3rem; }
+@media (max-width: 650px) {
+    #home-page nav ul { justify-content: flex-start; }
+    #home-page #textover { padding: 1.5rem; }
+}

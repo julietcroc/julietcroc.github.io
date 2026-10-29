@@ -8,34 +8,30 @@
     <title>2D Breakout Game</title>
   </head>
   <body id="ball-html">
-    <div id="forshadow"> 
-      <header class="hasflex">
-          <div id="h1tag" class="flexrow h1flex">
-              <div class="flexcolumn">
-              <h1><a href="index.html">Design Joules Services</a> </h1> 
-              </div>
-          </div>
-          <!--Future Navigation
-      <div class="flexcolumn navflex">
-          <nav>
-              <ul class="hasflex">
-                  <li><a href="index.html#courses">Courses</a></li>
-                  <li><a href="index.html#topics">Topics</a></li>
-                  <li><a href="index.html#projects">Projects</a></li>
-                  <li><a href="index.html#about">About</a></li>
-              </ul></nav>
-              -->
-          </div>
+    <div id="forshadow">
+      <header>
+        <div id="h1tag">
+          <h1><a href="index.html">Design Joules Services</a></h1>
+        </div>
       </header>
-  </div>  
-  <main>
-    <h2>Project Description</h2>
-    <p>pressing the button will start the game. The function is designed to hide the button</p>
-    <button id="startButton">Start the game!</button>
-    <canvas id="myCanvas" width="480" height="320">
-      
-    </canvas>
-  </main>
+    </div>
+    <main>
+      <section class="project-description" aria-labelledby="project-heading">
+        <h2 id="project-heading">Project Description</h2>
+        <p>This 2D Breakout game is a sample from CIS166AA, a course I taught as residential faculty in the Web Design program at Mesa Community College during the 2022–2023 and 2023–2024 school years.</p>
+        <p>The project demonstrates JavaScript concepts through an interactive game, adapted from the <a href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript">MDN 2D Breakout tutorial</a>.</p>
+      </section>
+      <section class="game-demo" aria-labelledby="game-heading">
+        <h2 id="game-heading">Try the game</h2>
+        <p id="game-instructions">Select “Start the game!” to begin. Move the paddle with the left and right arrow keys or your mouse to keep the ball in play and break the bricks. The start button disappears when the game begins.</p>
+        <div class="game-controls">
+          <button id="startButton">Start the game!</button>
+        </div>
+        <canvas id="myCanvas" width="480" height="320" aria-label="2D Breakout game" aria-describedby="game-instructions">
+          This game requires a browser that supports HTML canvas.
+        </canvas>
+      </section>
+    </main>
     <script src="JS/ball.js"></script>
 
   </body>
