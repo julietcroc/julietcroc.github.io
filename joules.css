@@ -330,7 +330,7 @@ header a:focus-visible, #textover a:focus-visible { outline-color: var(--gold); 
 #indigo-page .moments { padding: 3rem 0; }
 #indigo-page .section-heading { margin-bottom: 1.5rem; }
 #indigo-page .micah-update { padding: 2rem 0 3rem; border-top: 1px solid var(--cactus); }
-#indigo-page .moment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+#indigo-page .moment-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
 #indigo-page footer { padding: 2rem 1.25rem; border-top: 1px solid var(--cactus); text-align: center; }
 #indigo-page .skip-link { position: absolute; left: 1rem; top: -10rem; padding: 1rem; background: var(--sand); color: var(--shadow); z-index: 100; }
 #indigo-page .skip-link:focus { top: 1rem; }
