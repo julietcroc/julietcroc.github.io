@@ -288,6 +288,7 @@ header a:focus-visible, #textover a:focus-visible { outline-color: var(--gold); 
 /* Indigo’s page: all page-specific rules stay within this section. */
 #indigo-page { padding-bottom: 0; }
 #indigo-page p { padding-top: 0; line-height: 1.75; }
+#indigo-page p + p { margin-top: 1rem; }
 #indigo-page h2, #indigo-page h3 { padding-bottom: 0; margin-bottom: 1rem; }
 #indigo-page h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.3; }
 #indigo-page h3 { font-size: 1.1rem; line-height: 1.5; }
