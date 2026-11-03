@@ -341,3 +341,14 @@ header a:focus-visible, #textover a:focus-visible { outline-color: var(--gold); 
 @media (max-width: 650px) {
   #indigo-page .indigo-intro, #indigo-page .moment-grid { grid-template-columns: 1fr; }
 }
+
+/* ACSTO is the primary action; other STOs remain quiet alternatives. */
+#indigo-page .giving-steps { padding-left: 1.5rem; margin: 1.25rem 0; line-height: 1.75; }
+#indigo-page .giving-steps li + li { margin-top: .5rem; }
+#indigo-page .featured-acsto { margin: 1.5rem 0; padding: clamp(1.25rem, 4vw, 2rem); border: 2px solid var(--plum); border-top-width: 5px; border-radius: .5rem; }
+#indigo-page .acsto-info-link { display: block; width: fit-content; margin-top: 1rem; line-height: 1.6; }
+#indigo-page .alternative-stos { margin: 1.5rem 0; }
+#indigo-page .alternative-stos ul { margin-top: .75rem; padding-left: 1.5rem; line-height: 1.75; }
+#indigo-page .alternative-stos li + li { margin-top: .5rem; }
+#indigo-page .sto-video { margin: 1.5rem auto; }
+#indigo-page .sto-video .video-frame { margin-top: 1rem; }
