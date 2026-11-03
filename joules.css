@@ -352,3 +352,5 @@ header a:focus-visible, #textover a:focus-visible { outline-color: var(--gold); 
 #indigo-page .alternative-stos li + li { margin-top: .5rem; }
 #indigo-page .sto-video { margin: 1.5rem auto; }
 #indigo-page .sto-video .video-frame { margin-top: 1rem; }
+
+#indigo-page .micah-update .family-photo { margin-top: 1.25rem; }
